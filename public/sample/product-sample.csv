@@ -1,0 +1,3 @@
+Product Name,SKU,Category,Subcategory,Brand,Price,Quantity,Minimum Quantity,Variant Attributes,Tax,Discount,Description,Product Type
+apple 5,987678,category 1,computer2-1,apple,76666666,4,5,color : red;memory:125 GB,,,,
+apple 5,987678,category 1,computer2-1,apple,76666666,4,5,color :blue;memory:125 GB,,,,
