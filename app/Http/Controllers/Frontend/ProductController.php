@@ -147,7 +147,7 @@ class ProductController extends Controller
 
      
         // print_r(json_encode($varaint_options));
-       return view('frontend.view_product_demo', compact('product', 'varaint_options', 'activeVariant_options'));
+       return view('frontend.view_product', compact('product', 'varaint_options', 'activeVariant_options'));
         
     }
 

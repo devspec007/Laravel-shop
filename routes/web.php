@@ -147,8 +147,6 @@ Route::get('create-permissions', function(){
 });
 
 
-
-
 Route::get('index', [CustomAuthController::class, 'dashboard']);
 Route::get('signin', [CustomAuthController::class, 'index'])->name('login');
 Route::post('custom-login', [CustomAuthController::class, 'customSignin'])->name('signin.custom');

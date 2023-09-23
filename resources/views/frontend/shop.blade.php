@@ -342,47 +342,47 @@
                 }
 
     
-                $('#filter-product-list').append(`<div class="col-lg-4 col-md-4 col-12 col-sm-6">
-                            <div class="product-cart-wrap mb-30">
-                                <div class="product-img-action-wrap">
-                                    <div class="product-img product-img-zoom">
-                                        <a href="${base_url}/product/${value.product?.slug}">
-                                            <img class="default-img" src="${image}" alt="">
-                                            <img class="hover-img" src="${image}" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="product-action-1">
-                                        <a aria-label="Quick view" data-key="${value.product_id}" class="action-btn hover-up product-quick-view" ><i class="fi-rs-search"></i></a>
-                                        <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
-                                        <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
-                                    </div>
-                                    ${discount_tag}
-                                </div>
-                                <div class="product-content-wrap">
-                                    <div class="product-category">
-                                        <a href="${base_url}/product/${value.product?.slug}">${sub_category}</a>
-                                    </div>
-                                    <h2><a href="shop-product-right.html">${product_name}</a></h2>
-                                   
-                                    <div class="product-price">
-                                        <span>&#8377; ${price} </span>
-                                        ${discount_price_tag}
-                                    </div>
-                                    <div class="product-action-1 show">
-                                        <form action="" class="add-to-cart-form">
+                // $('#filter-product-list').append(`<div class="col-lg-4 col-md-4 col-12 col-sm-6">
+                //     <div class="product-cart-wrap mb-30">
+                //         <div class="product-img-action-wrap">
+                //             <div class="product-img product-img-zoom">
+                //                 <a href="${base_url}/product/${value.product?.slug}">
+                //                     <img class="default-img" src="${image}" alt="">
+                //                     <img class="hover-img" src="${image}" alt="">
+                //                 </a>
+                //             </div>
+                //             <div class="product-action-1">
+                //                 <a aria-label="Quick view" data-key="${value.product_id}" class="action-btn hover-up product-quick-view" ><i class="fi-rs-search"></i></a>
+                //                 <a aria-label="Add To Wishlist" class="action-btn hover-up" href="shop-wishlist.html"><i class="fi-rs-heart"></i></a>
+                //                 <a aria-label="Compare" class="action-btn hover-up" href="shop-compare.html"><i class="fi-rs-shuffle"></i></a>
+                //             </div>
+                //             ${discount_tag}
+                //         </div>
+                //         <div class="product-content-wrap">
+                //             <div class="product-category">
+                //                 <a href="${base_url}/product/${value.product?.slug}">${sub_category}</a>
+                //             </div>
+                //             <h2><a href="shop-product-right.html">${product_name}</a></h2>
+                            
+                //             <div class="product-price">
+                //                 <span>&#8377; ${price} </span>
+                //                 ${discount_price_tag}
+                //             </div>
+                //             <div class="product-action-1 show">
+                //                 <form action="" class="add-to-cart-form">
 
-                                            <div class="detail-extralink">
-                                                
-                                                <div class="product-extra-link2">
-                                                    <input name="variant_id" hidden value="${value.id }">
-                                                    <button type="submit" aria-label="Add To Cart" class="action-btn hover-up  button-add-to-cart card-add-to-cart "><i class="fi-rs-shopping-bag-add"></i></button>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>`)
+                //                     <div class="detail-extralink">
+                                        
+                //                         <div class="product-extra-link2">
+                //                             <input name="variant_id" hidden value="${value.id }">
+                //                             <button type="submit" aria-label="Add To Cart" class="action-btn hover-up  button-add-to-cart card-add-to-cart "><i class="fi-rs-shopping-bag-add"></i></button>
+                //                         </div>
+                //                     </div>
+                //                 </form>
+                //             </div>
+                //         </div>
+                //     </div>
+                // </div>`)
             })
         }
         function oldrender_shop_products(list) {
