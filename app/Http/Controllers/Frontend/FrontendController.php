@@ -40,12 +40,15 @@ class FrontendController extends Controller
 
     public function shop(Request $request, $slug_1 = null, $slug_2 = null)
     {
+        //dd($request->all());
+
         $page = Page::where(['slug' => $slug_1])->first();
         if($page) {
             return $this->renderPage($page);
         }
 
         $filters = VariantAttribute::where('status', 'active')->get();
+        dd($filters);
         $brands = Brand::where('status', 'active')->get();
         $filter_categories = [];
        
@@ -53,7 +56,8 @@ class FrontendController extends Controller
         if($slug_2 != null) {
             array_push($filter_categories, $slug_2);
         }
-
+        $res = compact('filters', 'brands', 'request', 'slug_1', 'slug_2', 'filter_categories');
+        dd($res);
         return view('frontend.shop', compact('filters', 'brands', 'request', 'slug_1', 'slug_2', 'filter_categories'));
     }
 
